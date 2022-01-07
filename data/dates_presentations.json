@@ -1,9 +1,9 @@
 {
-"debut_automne": "1",
-"fin_automne": "2",
-"debut_hiver": "3",
-"fin_hiver": "4",
-"jour1_ferie": "5",
-"jour2_ferie": "6",
-"jour3_ferie": "7"
+"debutAutomne": "1",
+"debutFete": "2",
+"debutHiver": "3",
+"debutEte": "4",
+"jour1Ferie": "5",
+"jour2Ferie": "6",
+"jour3Ferie": "7"
 }
