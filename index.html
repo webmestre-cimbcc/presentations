@@ -5,6 +5,68 @@
     <title>Présentations</title>
   </head>
   <body>
-<h3>Site web</h3>
+<h3>Lien pour les prochaines videoconférences </h3>
+<p id="affichageTexte"></p>
+ 
+ <script>
+//périodes des présentations
+const debutAutomne = [19, 9, 2021]; //vendredi de la première semaine des présentations à l'automne [jour, mois, année]
+const finAutomne = [19, 12, 2021]; //vendredi de la dernière semaine des présentations à l'automne [jour, mois, année]
+const debutHiver = [19, 1, 2022]; //vendredi de la première semaine des présentations à l'hiver [jour, mois, année]
+const finHiver = [18, 2, 2022]; //vendredi de la dernière semaine des présentations à l'hiver [jour, mois, année]
+const tempsDesFetes = []; //vendredi de la première semaine de la p/riode des f[etes [jour, mois, année]
+const relacheScolaire = []; //vendredi du début de semaine de relâche [jour, mois, année]
+const relacheEstivale= []; //vendredi du début de la période estivale [jour, mois, année]
+const relacheAutreRaison1 = []; //Journée de relâche autre raison-1 [jour, mois, année]. Si nul, ne rien entrer.
+const relacheAutreRaison2 = []; //Journée de relâche autre raison-2 [jour, mois, année]. Si nul, ne rien entrer.
+const relacheAutreRaison3 = []; //Journée de relâche autre raison-3 [jour, mois, année]. Si nul, ne rien entrer.
+const relacheAutreRaison4 = []; //Journée de relâche autre raison-4 [jour, mois, année]. Si nul, ne rien entrer.
+
+
+const lienMardi = ("https://us02web.zoom.us/j/81003163169?pwd=T0lxelI3ejhjSWx2dVBoTkN5ZlBNZz09")
+const idReunionMardi = ("810 0316 3169");
+const codeSecretMardi = ("683141");
+
+const lienMercredi = ("https://us02web.zoom.us/j/86082101724?pwd=UDlQbHBQZ01YaFdpSnphT3NEZGtCQT09")
+const idReunionMercredi = ("860 8210 1724");
+const codeSecretMercredi = ("448061");
+
+const lienVendredi = ("https://us02web.zoom.us/j/84218035679?pwd=dFdJTUQ1NGJodVUxNkNrblhaWXh1UT09")
+const idReunionVendredi = ("842 1803 5679");
+const codeSecretVendredi = ("275862");
+
+const numeroTelephone = ("1 438 809 7799");
+
+const texte = document.getElementById("affichageTexte");
+
+const mardi = (
+    "<br>" +
+"<strong>Lien pour mardi de cette semaine:</strong>" + "<br>" +
+"<a href=" + lienMardi + " target='_blank'>" + lienMardi + "</a>" + "<br>" + "<br>" +
+"<strong>ID de réunion: </strong>" + idReunionMardi + "<br>" +
+"<strong>Code secret: </strong>" + codeSecretMardi + "<br>"
+);
+
+const mercredi = (
+    "<br>" +
+    "<strong>Lien pour mercredi de cette semaine:</strong>" + "<br>" +
+    "<a href=" + lienMercredi + " target='_blank'>" + lienMercredi + "</a>" + "<br>" + "<br>" +
+    "<strong>ID de réunion: </strong>" + idReunionMercredi + "<br>" +
+    "<strong>Code secret: </strong>" + codeSecretMercredi + "<br>"
+    );
+
+const vendredi = (
+    "<br>" +
+    "<strong>Lien pour vendredi de cette semaine:</strong>" + "<br>" +
+    "<a href=" + lienVendredi + " target='_blank'>" + lienVendredi + "</a>" + "<br>" + "<br>" +
+    "<strong>ID de réunion: </strong>" + idReunionVendredi + "<br>" +
+    "<strong>Code secret: </strong>" + codeSecretVendredi
+     );
+
+
+
+texte.innerHTML = (mardi + mercredi + vendredi);
+
+</script> 
   </body>
 </html>
